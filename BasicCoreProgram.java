@@ -21,6 +21,10 @@ public class BasicCoreProgram {
         System.out.println("Enter Harmonic Value N:");
         harmonicnumber(scanner.nextInt());
 
+        System.out.println("Enter number N:");
+        factors(scanner.nextInt());
+
+
     }
     public static void headsortails(int numberOfTimesToflip){
         int totalTails=0;
@@ -70,6 +74,19 @@ public class BasicCoreProgram {
 
             System.out.print(harmonicN);
             System.out.print("+ ");
+        }
+
+    }
+
+    public static void factors(int N){
+        System.out.print("Prime factors of number N are:");
+        int c = 2;
+        while (N > 1) {
+            if (N % c == 0) {
+                System.out.print(c + " ");
+                N /= c;
+            } else
+                c++;
         }
 
     }
