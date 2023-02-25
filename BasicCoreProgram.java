@@ -24,6 +24,9 @@ public class BasicCoreProgram {
         System.out.println("Enter number N:");
         factors(scanner.nextInt());
 
+        System.out.println("Enter Dividend and Divisor number:");
+        quotientandremainder(scanner.nextInt(), scanner.nextInt());
+
 
     }
     public static void headsortails(int numberOfTimesToflip){
@@ -90,4 +93,14 @@ public class BasicCoreProgram {
         }
 
     }
+
+    public static void quotientandremainder(int dividend, int divisor){
+        int quotient = dividend / divisor;
+        int remainder = dividend % divisor;
+
+        System.out.println("Quotient = " + quotient);
+        System.out.println("Remainder = " + remainder);
+
+    }
+
 }
