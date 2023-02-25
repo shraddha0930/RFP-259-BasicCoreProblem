@@ -1,12 +1,19 @@
 package assignments.CorejavaAndFunctionalprogram;
 
 import java.util.Random;
+import java.util.Scanner;
 
 
 public class BasicCoreProgram {
     public static void main(String[] args) {
         System.out.println("Welcome To Basic Core Programs");
-        headsortails(10);
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.println("Enter the flip number:");
+        headsortails(scanner.nextInt());
+
+        System.out.println("Enter the year:");
+        leapyear(scanner.nextInt());
     }
     public static void headsortails(int numberOfTimesToflip){
         int totalTails=0;
@@ -25,5 +32,12 @@ public class BasicCoreProgram {
         double percentageOfHeads =(numberOfTimesToflip-totalTails)/(double)numberOfTimesToflip*100;
         System.out.println("Percentage of Heads :" + percentageOfHeads);
 
+    }
+    public static void leapyear(int year){
+        if (((year % 4 == 0) && (year % 100 != 0))|| (year % 400 == 0)){
+            System.out.println("Leap year");
+        }
+        else
+            System.out.println("Not a Leap Year");
     }
 }
