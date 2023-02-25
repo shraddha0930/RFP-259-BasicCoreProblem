@@ -33,6 +33,9 @@ public class BasicCoreProgram {
         System.out.println("Enter Number:");
         evenorodd(scanner.nextInt());
 
+        System.out.println("Enter a character :");
+        vowelorconsonant(scanner.next().charAt(0));
+
     }
     public static void headsortails(int numberOfTimesToflip){
         int totalTails=0;
@@ -126,6 +129,20 @@ public class BasicCoreProgram {
         } else{
             System.out.println("Odd Number");
         }
+    }
+
+    public static void vowelorconsonant(int alphabet){
+
+        if (alphabet =='a'|| alphabet =='e'|| alphabet == 'i' || alphabet == 'o' || alphabet == 'u'||
+                alphabet == 'A' ||alphabet == 'E' || alphabet == 'I' || alphabet == 'O' || alphabet == 'U')
+        {
+            System.out.println(alphabet+ " is Vowel");
+        }
+        else
+        {
+            System.out.println(alphabet + " is Consonant");
+        }
+
     }
 
 }
