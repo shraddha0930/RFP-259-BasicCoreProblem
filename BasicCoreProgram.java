@@ -15,8 +15,11 @@ public class BasicCoreProgram {
         System.out.println("Enter the year:");
         leapyear(scanner.nextInt());
 
-        System.out.println("Enter the number:");
+        System.out.println("Enter power value N:");
         poweroftwo(scanner.nextInt());
+
+        System.out.println("Enter Harmonic Value N:");
+        harmonicnumber(scanner.nextInt());
 
     }
     public static void headsortails(int numberOfTimesToflip){
@@ -55,5 +58,19 @@ public class BasicCoreProgram {
             powerOfTwo = 2 * powerOfTwo;                // double to get the next one
             i = i + 1;
         }
+    }
+    public static void harmonicnumber(int N){
+
+        double harmonicN = 1;
+
+        // Hn = H1 + H2 + H3 ... + Hn-1 + Hn-1 + 1/n
+        for (int i = 1; i <= N; i++) {
+
+            harmonicN = (double) 1 / i;
+
+            System.out.print(harmonicN);
+            System.out.print("+ ");
+        }
+
     }
 }
