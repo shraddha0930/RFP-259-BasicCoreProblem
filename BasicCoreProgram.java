@@ -36,6 +36,9 @@ public class BasicCoreProgram {
         System.out.println("Enter a character :");
         vowelorconsonant(scanner.next().charAt(0));
 
+        System.out.println("Enter three Numbers:");
+        largestamongthreenumbers(scanner.nextInt(), scanner.nextInt(), scanner.nextInt());
+
     }
     public static void headsortails(int numberOfTimesToflip){
         int totalTails=0;
@@ -142,6 +145,17 @@ public class BasicCoreProgram {
         {
             System.out.println(alphabet + " is Consonant");
         }
+
+    }
+
+    public static void largestamongthreenumbers(int firstNo, int secondNo, int thirdNo){
+
+        if(firstNo>=secondNo && firstNo>=thirdNo) {
+            System.out.println(firstNo+ " is the largest Number");
+        }else if (secondNo>=firstNo && secondNo>=thirdNo) {
+            System.out.println(secondNo+ " is the largest Number");
+        }else
+            System.out.println(thirdNo+" is the largest Number");
 
     }
 
