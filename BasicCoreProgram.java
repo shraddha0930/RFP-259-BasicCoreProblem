@@ -27,6 +27,8 @@ public class BasicCoreProgram {
         System.out.println("Enter Dividend and Divisor number:");
         quotientandremainder(scanner.nextInt(), scanner.nextInt());
 
+        System.out.println("Enter the value of number1 and number2:");
+        swap2numbers(scanner.nextInt(), scanner.nextInt());
 
     }
     public static void headsortails(int numberOfTimesToflip){
@@ -100,6 +102,17 @@ public class BasicCoreProgram {
 
         System.out.println("Quotient = " + quotient);
         System.out.println("Remainder = " + remainder);
+
+    }
+
+    public static void swap2numbers(int number1, int number2){
+        System.out.println("before swapping numbers: "+number1 +"  "+ number2);
+
+        //swapping
+        int temp = number1;
+        number1 = number2;
+        number2 = temp;
+        System.out.println("After swapping numbers: "+ number1 +"   " + number2);
 
     }
 
