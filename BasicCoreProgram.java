@@ -30,6 +30,9 @@ public class BasicCoreProgram {
         System.out.println("Enter the value of number1 and number2:");
         swap2numbers(scanner.nextInt(), scanner.nextInt());
 
+        System.out.println("Enter Number:");
+        evenorodd(scanner.nextInt());
+
     }
     public static void headsortails(int numberOfTimesToflip){
         int totalTails=0;
@@ -114,6 +117,15 @@ public class BasicCoreProgram {
         number2 = temp;
         System.out.println("After swapping numbers: "+ number1 +"   " + number2);
 
+    }
+
+    public static void evenorodd(int number){
+
+        if(number % 2 == 0){
+            System.out.println("Even Number");
+        } else{
+            System.out.println("Odd Number");
+        }
     }
 
 }
