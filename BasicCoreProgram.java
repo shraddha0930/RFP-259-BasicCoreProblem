@@ -14,6 +14,10 @@ public class BasicCoreProgram {
 
         System.out.println("Enter the year:");
         leapyear(scanner.nextInt());
+
+        System.out.println("Enter the number:");
+        poweroftwo(scanner.nextInt());
+
     }
     public static void headsortails(int numberOfTimesToflip){
         int totalTails=0;
@@ -39,5 +43,17 @@ public class BasicCoreProgram {
         }
         else
             System.out.println("Not a Leap Year");
+    }
+
+    public static void poweroftwo(int N){
+        int i = 0;                // count from 0 to N
+        int powerOfTwo = 1;       // the ith power of two
+
+        // repeat until i equals N
+        while (i <= N) {
+            System.out.println(i + " " + powerOfTwo);   // print out the power of two
+            powerOfTwo = 2 * powerOfTwo;                // double to get the next one
+            i = i + 1;
+        }
     }
 }
